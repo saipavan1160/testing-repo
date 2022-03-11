@@ -2,6 +2,11 @@ name: github actions
 
 on:
   push:
-    branch:
+    branches:
       - main
      
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment: development
+    
